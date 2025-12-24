@@ -1,6 +1,32 @@
 @import "tailwindcss";
+/* @import "tailwindcss" theme; */
+/* @import "tailwindcss/utilities"; */
 
-:root {
+
+/* 防止水平滚动条 */
+html {
+  /* overflow-x: hidden; */
+}
+
+/* 优化滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -23,4 +49,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
